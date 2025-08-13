@@ -9,9 +9,9 @@ plugins:
     opt:
       - paths=source_relative
   - remote: buf.build/protocolbuffers/dart
-    out: ../frontend/proto
+    out: ../frontend/lib/proto
   - remote: buf.build/connectrpc/dart
-    out: ../frontend/proto
+    out: ../frontend/lib/proto
   - local: ["go", "run", "github.com/sudorandom/protoc-gen-connect-openapi@latest"]
     out: ../openapi
 inputs:

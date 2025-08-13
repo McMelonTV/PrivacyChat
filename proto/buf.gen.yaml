@@ -9,9 +9,9 @@ plugins:
     opt:
       - paths=source_relative
   - remote: buf.build/protocolbuffers/java
-    out: ../frontend/src/main/java/com/nodiumhosting/privacychat/proto
+    out: ../frontend/src/main/java
   - remote: buf.build/connectrpc/kotlin
-    out: ../frontend/src/main/java/com/nodiumhosting/privacychat/proto
+    out: ../frontend/src/main/java
   - local: ["go", "run", "github.com/sudorandom/protoc-gen-connect-openapi@latest"]
     out: ../openapi
 inputs:

@@ -1,4 +1,11 @@
 syntax = "proto3";
 
-package privacychat.proto;
-option go_package = "privacychat/proto";
+package secretum.proto;
+option go_package = "secretum/proto";
+option java_package = "io.github.secretumchat.secretum.proto";
+
+message Empty {}
+
+service Test {
+  rpc Test(Empty) returns (Empty);
+}

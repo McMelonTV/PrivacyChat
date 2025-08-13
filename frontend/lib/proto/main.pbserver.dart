@@ -43,7 +43,6 @@ abstract class TestServiceBase extends $pb.GeneratedService {
   }
 
   $core.Map<$core.String, $core.dynamic> get $json => TestServiceBase$json;
-
   $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
       get $messageJson => TestServiceBase$messageJson;
 }

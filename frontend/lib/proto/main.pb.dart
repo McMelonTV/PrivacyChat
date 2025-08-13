@@ -25,7 +25,6 @@ class Empty extends $pb.GeneratedMessage {
   factory Empty.fromBuffer($core.List<$core.int> data,
           [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
       create()..mergeFromBuffer(data, registry);
-
   factory Empty.fromJson($core.String json,
           [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
       create()..mergeFromJson(json, registry);
@@ -38,7 +37,6 @@ class Empty extends $pb.GeneratedMessage {
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Empty clone() => Empty()..mergeFromMessage(this);
-
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   Empty copyWith(void Function(Empty) updates) =>
       super.copyWith((message) => updates(message as Empty)) as Empty;
@@ -48,12 +46,9 @@ class Empty extends $pb.GeneratedMessage {
 
   @$core.pragma('dart2js:noInline')
   static Empty create() => Empty._();
-
   @$core.override
   Empty createEmptyInstance() => create();
-
   static $pb.PbList<Empty> createRepeated() => $pb.PbList<Empty>();
-
   @$core.pragma('dart2js:noInline')
   static Empty getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Empty>(create);

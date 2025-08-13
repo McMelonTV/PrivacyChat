@@ -6,11 +6,11 @@ RUN go mod download
 COPY main.go ./
 COPY backend backend/
 COPY proto proto/
-RUN go build -o /privacychat_backend
+RUN go build -o /secretum_backend
 
 FROM alpine:latest AS backend
 EXPOSE 8080/tcp
 WORKDIR /app
-COPY --from=build-backend /privacychat_backend /app
-VOLUME ["/etc/privacychat", "/var/lib/privacychat", "/var/log/privacychat"]
-CMD ["./privacychat_backend"]
+COPY --from=build-backend /secretum_backend /app
+VOLUME ["/etc/secretum", "/var/lib/secretum", "/var/log/secretum"]
+CMD ["./secretum_backend"]
